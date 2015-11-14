@@ -1,0 +1,27 @@
+.row {
+	@include outer-container;
+	.one.columns {@include span-columns(1);}
+	.two.columns {@include span-columns(2);}
+	.three.columns {@include span-columns(3);}
+	.four.columns {@include span-columns(4);}
+	.five.columns {@include span-columns(5);}
+	.six.columns {@include span-columns(6);}
+	.seven.columns {@include span-columns(7);}
+	.eight.columns {@include span-columns(8);}
+	.nine.columns {@include span-columns(9);}
+	.ten.columns {@include span-columns(10);}
+	.eleven.columns {@include span-columns(11);}
+	.twelve.columns {@include span-columns(12);}
+
+	.one.columns.centered {@include span-columns(1);@include shift(6);}
+	.two.columns.centered {@include span-columns(2);@include shift(5);}
+	.three.columns.centered {@include span-columns(3);@include shift(5);}
+	.four.columns.centered {@include span-columns(4);@include shift(4);}
+	.five.columns.centered {@include span-columns(5);@include shift(4);}
+	.six.columns.centered {@include span-columns(6);@include shift(3);}
+	.seven.columns.centered {@include span-columns(7);@include shift(3);}
+	.eight.columns.centered {@include span-columns(8);@include shift(2);}
+	.nine.columns.centered {@include span-columns(9);@include shift(2);}
+	.ten.columns.centered {@include span-columns(10);@include shift(1);}
+	.eleven.columns.centered {@include span-columns(11);@include shift(1);}
+}
