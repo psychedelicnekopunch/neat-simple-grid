@@ -1,27 +1,159 @@
+$mobile: new-breakpoint(max-width 500px 4);
+
 .row {
 	@include outer-container;
-	.one.columns {@include span-columns(1);}
-	.two.columns {@include span-columns(2);}
-	.three.columns {@include span-columns(3);}
-	.four.columns {@include span-columns(4);}
-	.five.columns {@include span-columns(5);}
-	.six.columns {@include span-columns(6);}
-	.seven.columns {@include span-columns(7);}
-	.eight.columns {@include span-columns(8);}
-	.nine.columns {@include span-columns(9);}
-	.ten.columns {@include span-columns(10);}
-	.eleven.columns {@include span-columns(11);}
-	.twelve.columns {@include span-columns(12);}
 
-	.one.columns.centered {@include span-columns(1);@include shift(6);}
-	.two.columns.centered {@include span-columns(2);@include shift(5);}
-	.three.columns.centered {@include span-columns(3);@include shift(5);}
-	.four.columns.centered {@include span-columns(4);@include shift(4);}
-	.five.columns.centered {@include span-columns(5);@include shift(4);}
-	.six.columns.centered {@include span-columns(6);@include shift(3);}
-	.seven.columns.centered {@include span-columns(7);@include shift(3);}
-	.eight.columns.centered {@include span-columns(8);@include shift(2);}
-	.nine.columns.centered {@include span-columns(9);@include shift(2);}
-	.ten.columns.centered {@include span-columns(10);@include shift(1);}
-	.eleven.columns.centered {@include span-columns(11);@include shift(1);}
+	> .one.columns    { @include span-columns(1, block-collapse); }
+	> .two.columns    { @include span-columns(2, block-collapse); }
+	> .three.columns  { @include span-columns(3, block-collapse); }
+	> .four.columns   { @include span-columns(4, block-collapse); }
+	> .five.columns   { @include span-columns(5, block-collapse); }
+	> .six.columns    { @include span-columns(6, block-collapse); }
+	> .seven.columns  { @include span-columns(7, block-collapse); }
+	> .eight.columns  { @include span-columns(8, block-collapse); }
+	> .nine.columns   { @include span-columns(9, block-collapse); }
+	> .ten.columns    { @include span-columns(10, block-collapse); }
+	> .eleven.columns { @include span-columns(11, block-collapse); }
+	> .twelve.columns { @include span-columns(12, block-collapse); }
+
+	> .one.columns.centered    { @include shift(6); }
+	> .two.columns.centered    { @include shift(5); }
+	> .three.columns.centered  { @include shift(5); }
+	> .four.columns.centered   { @include shift(4); }
+	> .five.columns.centered   { @include shift(4); }
+	> .six.columns.centered    { @include shift(3); }
+	> .seven.columns.centered  { @include shift(3); }
+	> .eight.columns.centered  { @include shift(2); }
+	> .nine.columns.centered   { @include shift(2); }
+	> .ten.columns.centered    { @include shift(1); }
+	> .eleven.columns.centered { @include shift(1); }
+
+	> .one.columns,
+	> .two.columns,
+	> .three.columns,
+	> .four.columns,
+	> .five.columns,
+	> .six.columns,
+	> .seven.columns,
+	> .eight.columns,
+	> .nine.columns,
+	> .ten.columns,
+	> .eleven.columns,
+	> .twelve.columns,
+	> .one.columns.centered,
+	> .two.columns.centered,
+	> .three.columns.centered,
+	> .four.columns.centered,
+	> .five.columns.centered,
+	> .six.columns.centered,
+	> .seven.columns.centered,
+	> .eight.columns.centered,
+	> .nine.columns.centered,
+	> .ten.columns.centered,
+	> .eleven.columns.centered,
+	> .twelve.columns.centered {
+		box-sizing: border;
+		@include media($mobile) {
+			@include span-columns(4, block-collapse);
+			@include shift(0);
+		}
+	}
+	> .sm-one.columns {
+		@include media($mobile) { @include span-columns(1, block-collapse); }
+	}
+	> .sm-two.columns {
+		@include media($mobile) { @include span-columns(2, block-collapse); }
+	}
+	> .sm-three.columns {
+		@include media($mobile) { @include span-columns(3, block-collapse); }
+	}
+	> .sm-four.columns {
+		@include media($mobile) { @include span-columns(4, block-collapse); }
+	}
+}
+
+
+.list {
+	padding: 0;
+	> li {
+
+	}
+}
+
+.list.two {
+	@include outer-container;
+	> li {
+		@include span-columns(6, block-collapse);
+		width: 50%;
+		&:last-child {
+			width: 50%;
+		}
+	}
+}
+.list.three {
+	@include outer-container;
+	> li {
+		@include span-columns(4, block-collapse);
+		width: 33.3333%;
+		&:last-child {
+			width: 33.3333%;
+		}
+	}
+}
+.list.four {
+	@include outer-container;
+	> li {
+		@include span-columns(3, block-collapse);
+		width: 25%;
+		&:last-child {
+			width: 25%;
+		}
+	}
+}
+.list.six {
+	@include outer-container;
+	> li {
+		@include span-columns(2, block-collapse);
+		width: 16.6666%;
+		&:last-child {
+			width: 16.6666%;
+		}
+	}
+}
+
+
+.list.two,
+.list.three,
+.list.four,
+.list.six {
+	> li {
+		box-sizing: border;
+		@include media($mobile) { @include span-columns(4, block-collapse); }
+	}
+}
+
+
+.list.sm-two {
+	@include outer-container;
+	> li {
+		@include media($mobile) {
+			@include span-columns(2, block-collapse);
+			width: 50%;
+			&:last-child {
+				width: 50%;
+			}
+		}
+	}
+}
+.list.sm-four {
+	@include outer-container;
+	> li {
+		@include media($mobile) {
+			@include span-columns(1, block-collapse);
+			width: 25%;
+			&:last-child {
+				width: 25%;
+			}
+		}
+	}
 }
