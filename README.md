@@ -182,7 +182,7 @@ bower install neat-simple-grid --save
 
 ### Mobile List
 
-* use just ***two and six***
+* use just ***sm-xxx (two or four)***
 
 ```html
 // use <ul> or <ol> and <li>
