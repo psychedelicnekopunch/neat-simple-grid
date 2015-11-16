@@ -1,20 +1,38 @@
 {
   "name": "neat-simple-grid",
-  "authors": [
-    "masa69"
+  "description": "a simple grid which is wrapper of Neat.",
+  "version": "0.1.0",
+  "main": [
+    "src/_neat-simple-grid-setting.scss",
+    "src/_neat-simple-grid.scss"
   ],
-  "description": "",
-  "main": "",
   "moduleType": [],
   "license": "MIT",
   "homepage": "",
   "ignore": [
     "**/.*",
-    "node_modules",
     "bower_components",
+    "bower.json",
+    "gulpfile.js",
+    "node_modules",
+    "package.json",
     "test",
-    "tests"
+    "tests",
+    "sass"
   ],
+  "keywords": [
+    "grid",
+    "sass",
+    "css",
+    "neat",
+    "bourbon",
+    "simple",
+    "lightweight"
+  ],
+  "authors": [
+    "masa69"
+  ],
+  "homepage": "https://github.com/masa69/neat-simple-grid",
   "dependencies": {
     "neat": "~1.7.2",
     "bourbon": "~4.2.6"

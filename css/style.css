@@ -8,18 +8,79 @@ body, html {
   padding: 0;
   margin: 0; }
 
+body {
+  color: #444;
+  font-size: 13px;
+  line-height: 140%; }
+
+a {
+  color: #028;
+  text-decoration: none; }
+  a:hover {
+    color: #24a;
+    text-decoration: underline; }
+
+h1, h2, h3 {
+  color: #013;
+  font-weight: normal;
+  padding: 0;
+  margin: 0; }
+
+h1 {
+  font-size: 14px;
+  line-height: 140%;
+  display: inline-block;
+  padding-right: 10px; }
+
+h2 {
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
+h3 {
+  font-size: 16px;
+  line-height: 140%;
+  border-bottom: 1px #ddd solid;
+  padding-bottom: 3px;
+  margin-bottom: 15px; }
+
+/**
+ * Layout
+ */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  border-bottom: 1px #eee solid;
+  padding: 4px 5px; }
+
+section {
+  margin-bottom: 50px; }
+
+.main {
+  padding: 50px 20px; }
+
+/**
+ * Setting for Neat Simple Grid
+ */
 .row {
-  background: #f2f2f2; }
+  background: #f9f9f9; }
   .row .columns {
+    background: #f1f1f1;
     border: 1px #ddd solid; }
 
 .list {
-  background: #f2f2f2; }
+  background: #f9f9f9; }
   .list > li {
+    background: #f1f1f1;
     border: 1px #ddd solid; }
 
 .row {
-  max-width: 68em;
+  max-width: 75em;
   margin-left: auto;
   margin-right: auto; }
   .row::after {
@@ -173,7 +234,8 @@ body, html {
         float: left;
         display: block;
         width: 107.42297%;
-        margin-left: 0%; }
+        margin-left: 0%;
+        width: 100%; }
         .row > .one.columns:last-child,
         .row > .two.columns:last-child,
         .row > .three.columns:last-child,
@@ -220,19 +282,30 @@ body, html {
       width: 80.56723%; }
       .row > .sm-three.columns:last-child {
         width: 73.14426%; } }
-  @media screen and (max-width: 500px) {
-    .row > .sm-four.columns {
-      float: left;
-      display: block;
-      width: 107.42297%; }
-      .row > .sm-four.columns:last-child {
-        width: 100%; } }
 
 .list {
   padding: 0; }
 
+.list.one {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto; }
+  .list.one::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .list.one > li {
+    float: left;
+    display: block;
+    width: 102.35765%;
+    width: 100%; }
+    .list.one > li:last-child {
+      width: 100%; }
+    .list.one > li:last-child {
+      width: 100%; }
+
 .list.two {
-  max-width: 68em;
+  max-width: 75em;
   margin-left: auto;
   margin-right: auto; }
   .list.two::after {
@@ -250,7 +323,7 @@ body, html {
       width: 50%; }
 
 .list.three {
-  max-width: 68em;
+  max-width: 75em;
   margin-left: auto;
   margin-right: auto; }
   .list.three::after {
@@ -268,7 +341,7 @@ body, html {
       width: 33.3333%; }
 
 .list.four {
-  max-width: 68em;
+  max-width: 75em;
   margin-left: auto;
   margin-right: auto; }
   .list.four::after {
@@ -286,7 +359,7 @@ body, html {
       width: 25%; }
 
 .list.six {
-  max-width: 68em;
+  max-width: 75em;
   margin-left: auto;
   margin-right: auto; }
   .list.six::after {
@@ -303,19 +376,23 @@ body, html {
     .list.six > li:last-child {
       width: 16.6666%; }
 
+.list.one > li,
 .list.two > li,
 .list.three > li,
 .list.four > li,
 .list.six > li {
   box-sizing: border; }
   @media screen and (max-width: 500px) {
+    .list.one > li,
     .list.two > li,
     .list.three > li,
     .list.four > li,
     .list.six > li {
       float: left;
       display: block;
-      width: 107.42297%; }
+      width: 107.42297%;
+      width: 100%; }
+      .list.one > li:last-child,
       .list.two > li:last-child,
       .list.three > li:last-child,
       .list.four > li:last-child,
@@ -323,7 +400,7 @@ body, html {
         width: 100%; } }
 
 .list.sm-two {
-  max-width: 68em;
+  max-width: 75em;
   margin-left: auto;
   margin-right: auto; }
   .list.sm-two::after {
@@ -342,7 +419,7 @@ body, html {
         width: 50%; } }
 
 .list.sm-four {
-  max-width: 68em;
+  max-width: 75em;
   margin-left: auto;
   margin-right: auto; }
   .list.sm-four::after {

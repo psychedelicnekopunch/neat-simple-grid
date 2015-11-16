@@ -1,0 +1,93 @@
+body, html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	color: #444;
+	font-size: 13px;
+	line-height: 140%;
+}
+
+a {
+	color: #028;
+	text-decoration: none;
+	&:hover {
+		color: #24a;
+		text-decoration: underline;
+	}
+}
+
+h1, h2, h3 {
+	color: #013;
+	font-weight: normal;
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	// font-size: 28px;
+	// line-height: 140%;
+	// padding-bottom: 20px;
+	font-size: 14px;
+	line-height: 140%;
+	display: inline-block;
+	padding-right: 10px;
+}
+h2 {
+	font-size: 20px;
+	line-height: 140%;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+h3 {
+	font-size: 16px;
+	line-height: 140%;
+	border-bottom: 1px #ddd solid;
+	padding-bottom: 3px;
+	margin-bottom: 15px;
+}
+
+
+/**
+ * Layout
+ */
+
+header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: #fff;
+	border-bottom: 1px #eee solid;
+	padding: 4px 5px;
+}
+
+section {
+	margin-bottom: 50px;
+}
+
+.main {
+	padding: 50px 20px;
+}
+
+
+/**
+ * Setting for Neat Simple Grid
+ */
+.row {
+	background: #f9f9f9;
+	.columns {
+		background: #f1f1f1;
+		border: 1px #ddd solid;
+	}
+}
+
+.list {
+	background: #f9f9f9;
+	> li {
+		background: #f1f1f1;
+		border: 1px #ddd solid;
+	}
+}
