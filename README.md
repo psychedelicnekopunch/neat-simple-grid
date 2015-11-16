@@ -23,7 +23,7 @@ bower install neat-simple-grid --save
 
 ## usage
 
-* see [exsamle page (index.html)](index.html)
+* see [demo page](http://github.masa69.net/neat-simple-grid/).
 
 ### Basic Grid
 
