@@ -6,15 +6,18 @@ you need [Bourbon](http://bourbon.io/) also.
 Bourbon and Neat is known as a lightweight sass.
 
 
+
 ## getting started
 
-* install [Bourbon](https://github.com/thoughtbot/bourbon#installation) and [Neat](https://github.com/thoughtbot/neat#installation).
+```bash
+bower install neat-simple-grid --save
+```
+
 * @import the following files in your main sass file.
 	* bourbon
 	* neat
 	* _neat-simple-grid-setting.scss
 	* _neat-simple-grid.scss
-
 
 
 
@@ -60,7 +63,6 @@ Bourbon and Neat is known as a lightweight sass.
 
 
 
-
 ### Mobile Grid
 
 * Mobile Grid has 4 columns.
@@ -100,7 +102,6 @@ Bourbon and Neat is known as a lightweight sass.
 
 
 
-
 ### Centered Columns
 
 * use ***centered***
@@ -122,7 +123,6 @@ Bourbon and Neat is known as a lightweight sass.
 	</div>
 </div>
 ```
-
 
 
 
@@ -216,6 +216,3 @@ Bourbon and Neat is known as a lightweight sass.
 	<li>6 list</li>
 </ul>
 ```
-
-
-
