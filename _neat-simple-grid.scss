@@ -1,5 +1,5 @@
 // http://thoughtbot.github.io/neat-docs/latest/#new-breakpoint
-$mobile: new-breakpoint(max-width 500px 4);
+$mobile: new-breakpoint(max-width $mobile-max-width 4);
 
 .row {
 	@include outer-container;
@@ -69,9 +69,6 @@ $mobile: new-breakpoint(max-width 500px 4);
 	> .sm-three.columns {
 		@include media($mobile) { @include span-columns(3, block-collapse); }
 	}
-	> .sm-four.columns {
-		@include media($mobile) { @include span-columns(4, block-collapse); }
-	}
 }
 
 
@@ -82,6 +79,16 @@ $mobile: new-breakpoint(max-width 500px 4);
 	}
 }
 
+.list.one {
+	@include outer-container;
+	> li {
+		@include span-columns(12, block-collapse);
+		width: 100%;
+		&:last-child {
+			width: 100%;
+		}
+	}
+}
 .list.two {
 	@include outer-container;
 	> li {
@@ -124,6 +131,7 @@ $mobile: new-breakpoint(max-width 500px 4);
 }
 
 
+.list.one,
 .list.two,
 .list.three,
 .list.four,
