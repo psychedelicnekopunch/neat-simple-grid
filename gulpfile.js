@@ -9,5 +9,5 @@ gulp.task('default', function()
 			// [outputStyle] Type: String Default: nested Values: nested, expanded, compact, compressed
 			// outputStyle  : 'compressed',
 		}))
-		.pipe(gulp.dest('./css/'));
+		.pipe(gulp.dest('./demo/css/'));
 });

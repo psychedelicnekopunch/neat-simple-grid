@@ -1,14 +1,13 @@
 {
   "name": "neat-simple-grid",
   "description": "a simple grid which is wrapper of Neat.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": [
-    "src/_neat-simple-grid-setting.scss",
-    "src/_neat-simple-grid.scss"
+    "_neat-simple-grid-setting.scss",
+    "_neat-simple-grid.scss"
   ],
   "moduleType": [],
   "license": "MIT",
-  "homepage": "",
   "ignore": [
     "**/.*",
     "bower_components",

@@ -1,5 +1,7 @@
 # neat-simple-grid
 
+* v0.2.0
+
 this is a simple grid which is wrapper of [Neat](http://neat.bourbon.io/).  
 you need [Bourbon](http://bourbon.io/) also.
 
@@ -7,12 +9,17 @@ Bourbon and Neat is known as a lightweight sass.
 
 
 
-## getting started
+## install
 
 ```bash
 bower install neat-simple-grid --save
 ```
 
+
+
+## usage
+
+* see [demo page](http://github.masa69.net/neat-simple-grid/).
 * @import the following files in your main sass file.
 	* bourbon
 	* neat
@@ -20,10 +27,6 @@ bower install neat-simple-grid --save
 	* _neat-simple-grid.scss
 
 
-
-## usage
-
-* see [demo page](http://github.masa69.net/neat-simple-grid/).
 
 ### Basic Grid
 
